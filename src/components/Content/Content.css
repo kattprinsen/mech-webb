@@ -3,8 +3,31 @@
   padding: 32px;
 }
 
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+.content-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.content-image {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 @media only screen and (max-width: 600px) {
-  .content-container {
+  .content-header {
       flex-direction: column;
+  }
+
+  .content-column {
+    flex: 50%;
+    max-width: 50%;
   }
 }

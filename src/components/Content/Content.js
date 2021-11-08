@@ -11,6 +11,16 @@ const Content = ({heading, content}) => {
     <div className="content-header">
       <Heading heading={`Welcome to the ${heading} component`} />
       <ContentText contentText={content} />
+      <div className="content-row">
+        <div className="content-column">
+          <span> Lolwut </span>
+          <span> Lolwut </span>
+          <span> Lolwut </span>
+          <span> Lolwut </span>
+          <span> Lolwut </span>
+          <span> Lolwut </span>
+        </div>
+      </div>
     </div>
   );
 }
