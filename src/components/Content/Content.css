@@ -1,0 +1,10 @@
+.content-header {
+  text-align: center;
+  padding: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+      flex-direction: column;
+  }
+}
