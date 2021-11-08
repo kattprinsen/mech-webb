@@ -9,14 +9,14 @@
 }
 
 .hero-container {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 0;
   background: rgba(0,0,0,0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
   text-align: center;
-  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 
 .video-btn {
