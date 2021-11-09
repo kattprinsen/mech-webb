@@ -7,7 +7,7 @@ const About = () => {
 
   const about = {
     heading: 'About',
-    content: 'All about me here'
+    content: 'All about me here in good looking charts.'
   };
 
   return (

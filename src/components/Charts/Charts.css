@@ -1,11 +1,16 @@
+.chart-header {
+  color: red;
+  margin-bottom: 10px;
+}
+
 .charts-container {
   text-align: center;
-  display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
 }
 
-.radar-chart-container {
+.radar-chart-container, .bar-chart-container {
   background: rgba(0, 0, 0, 0.5);
   display: inline-block;
   margin: 20px;

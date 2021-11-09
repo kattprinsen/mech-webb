@@ -2,6 +2,7 @@ import React from 'react';
 import './Charts.css';
 
 import RadarChart from './RadarChart/RadarChart';
+import SimpleBarChart from './SimpleBarChart/SimpleBarChart';
 
 const radarData = [
   {
@@ -47,8 +48,12 @@ const Charts = () => {
   return (
     <div className="charts-container">
       <div className="radar-chart-container">
-      <h1>Radar Chart</h1>
+      <h1 className="chart-header"> Radar Chart </h1>
         <RadarChart data={radarData} />
+      </div>
+      <div className="bar-chart-container">
+      <h1 className="chart-header">Simple Bar Chart </h1>
+        <SimpleBarChart data={radarData} />
       </div>
     </div>
   );
