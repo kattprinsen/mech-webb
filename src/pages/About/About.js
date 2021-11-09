@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Content from '../../components/Content/Content';
+import Charts from '../../components/Charts/Charts';
 
 const About = () => {
 
@@ -12,6 +13,7 @@ const About = () => {
   return (
     <React.Fragment>
       <Content {...about} />
+      <Charts />
     </React.Fragment>
   );
 }

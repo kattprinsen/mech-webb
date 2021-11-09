@@ -13,12 +13,7 @@ const Content = ({heading, content}) => {
       <ContentText contentText={content} />
       <div className="content-row">
         <div className="content-column">
-          <span> Lolwut </span>
-          <span> Lolwut </span>
-          <span> Lolwut </span>
-          <span> Lolwut </span>
-          <span> Lolwut </span>
-          <span> Lolwut </span>
+
         </div>
       </div>
     </div>
