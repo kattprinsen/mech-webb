@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Hero from '../../components/Hero/Hero';
 import Content from '../../components/Content/Content';
 
 const Home = () => {
@@ -11,10 +10,9 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <Hero />
+    <React.Fragment>
       <Content {...home} />
-    </div>
+    </React.Fragment>
   );
 }
 
