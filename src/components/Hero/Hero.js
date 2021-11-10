@@ -26,6 +26,18 @@ const Hero = () => {
       <button className="video-btn" onClick={handleVideo}>
       { play ? 'Pause' : 'Play' }
       </button>
+      <div className="hero-dropdown">
+        <span> Dropdown </span>
+        <div className="hero-dropdown-content">
+          <p> item </p>
+          <p> item </p>
+          <p> item </p>
+          <p> item </p>
+          <p> item </p>
+          <p> item </p>
+          <p> item </p>
+        </div>
+      </div>
     </div>
   );
 }
