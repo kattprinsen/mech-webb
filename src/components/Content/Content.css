@@ -18,15 +18,19 @@
 }
 
 .content-column {
-  flex: 25%;
+  flex: 20%;
   border: 2px solid black;
   height: 80px;
   width: 80px;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
   .content-column {
-    flex-wrap: nowrap;
+    flex: 100%;
+    flex-wrap: wrap;
     flex-direction: column;
   }
 }

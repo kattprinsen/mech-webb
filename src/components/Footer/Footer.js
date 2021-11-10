@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <span> Follow me on </span>
-      <p> <FiTwitter /> </p>
+       <a href={'https://twitter.com/fritzbqvist'}> <FiTwitter /></a>
     </div>
   );
 }
