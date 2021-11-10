@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Content from '../../components/Content/Content';
+import Table from '../../components/Table/Table';
 
 const Contact = () => {
 
@@ -12,6 +13,7 @@ const Contact = () => {
   return (
     <React.Fragment>
       <Content {...contact} />
+      <Table />
     </React.Fragment>
   );
 }

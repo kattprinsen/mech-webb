@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Content from '../../components/Content/Content';
-import Table from '../../components/Table/Table';
 
 const Home = () => {
 
@@ -13,7 +12,6 @@ const Home = () => {
   return (
     <React.Fragment>
       <Content {...home} />
-      <Table />
     </React.Fragment>
   );
 }

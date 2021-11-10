@@ -4,6 +4,7 @@ import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer';
 
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
           </Routes>
+        <Footer />
     </div>
   );
 }

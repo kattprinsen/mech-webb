@@ -3,31 +3,30 @@
   padding: 32px;
 }
 
+.content-container {
+  padding: 2em 4em;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .content-row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 4px;
-  justify-content: center;
+  width: 100%;
 }
 
 .content-column {
   flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.content-image {
-  margin-top: 8px;
-  vertical-align: middle;
+  border: 2px solid black;
+  height: 80px;
+  width: 80px;
 }
 
 @media only screen and (max-width: 600px) {
-  .content-header {
-      flex-direction: column;
-  }
-
   .content-column {
-    flex: 50%;
-    max-width: 50%;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
