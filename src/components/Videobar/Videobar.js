@@ -9,6 +9,10 @@ const Videobar = () => {
 
   const handleVideoBar = () => {
 
+    if(!playing){
+      isPlaying(true);
+    }
+    
     let width = 1;
     let id = setInterval(frame, 10);
 
@@ -19,10 +23,6 @@ const Videobar = () => {
 
       width++;
       videoBar.current.style.width = width + '%';
-    }
-
-    if(!playing){
-      isPlaying(true);
     }
   }
 

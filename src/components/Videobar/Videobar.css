@@ -5,20 +5,19 @@
 }
 
 .videobar-playing {
-  width: 11px;
+  width: 1px;
   height: 5px;
   background-color: red;
 }
 
 .videobar-play-btn {
-  position: fixed;
   width: 1px;
   cursor: pointer;
 }
 
 .videobar-circle {
+  position:absolute;
   margin: -5px;
-  position:relative;
   background-color: red;
   border-radius: 25%;
   height: 15px;
@@ -30,7 +29,6 @@
   transform: translate(770px, 0);
   transition: all 1.6s;
   margin: -5px;
-  position:relative;
   background-color: red;
   border-radius: 25%;
   height: 15px;
