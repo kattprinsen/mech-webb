@@ -1,5 +1,6 @@
 import React from 'react';
 import './Content.css';
+import { FiChevronsRight } from 'react-icons/fi';
 
 const Content = ({heading, content}) => {
   heading = heading || 'defaultHeader'; //default prop handler for no heading
@@ -16,12 +17,21 @@ const Content = ({heading, content}) => {
           <div className="content-column">
             Hehe mixed grid layout
           </div>
+            <div className="content-arrow">
+              <FiChevronsRight />
+            </div>
           <div className="content-column">
             Hehe mixed grid layout
           </div>
+            <div className="content-arrow">
+              <FiChevronsRight />
+            </div>
           <div className="content-column">
             Hehe mixed grid layout
           </div>
+            <div className="content-arrow">
+              <FiChevronsRight />
+            </div>
           <div className="content-column">
             Hehe mixed grid layout
           </div>

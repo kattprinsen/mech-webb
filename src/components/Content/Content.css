@@ -27,10 +27,18 @@
   color: white;
 }
 
+.content-arrow {
+  margin-top: calc(70px / 2);
+  margin-bottom: calc(70px / 2);
+  padding: 4px;
+  background-color: rgba(0 ,0 ,0 ,0.5);
+  color: #fff;
+  border: 2px solid black;
+}
+
 @media only screen and (max-width: 600px) {
   .content-column {
-    flex: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
