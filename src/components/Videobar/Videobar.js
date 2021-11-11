@@ -10,7 +10,7 @@ const Videobar = () => {
   const handleVideoBar = () => {
 
     let width = 1;
-    let id = setInterval(frame, 100);
+    let id = setInterval(frame, 10);
 
     function frame() {
       if(width >= 100) {

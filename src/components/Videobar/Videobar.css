@@ -28,7 +28,7 @@
 
 .videobar-circle-play {
   transform: translate(770px, 0);
-  transition: all 3s;
+  transition: all 1.6s;
   margin: -5px;
   position:relative;
   background-color: red;
