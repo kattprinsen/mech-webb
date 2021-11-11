@@ -1,6 +1,7 @@
 import React from 'react';
 import './Content.css';
 import { FiChevronsRight } from 'react-icons/fi';
+import Videobar from '../../components/Videobar/Videobar';
 
 const Content = ({heading, content}) => {
   heading = heading || 'defaultHeader'; //default prop handler for no heading
@@ -36,6 +37,7 @@ const Content = ({heading, content}) => {
             Hehe mixed grid layout
           </div>
         </div>
+        <Videobar />
       </div>
     </div>
   );

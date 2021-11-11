@@ -1,0 +1,39 @@
+.videobar {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+}
+
+.videobar-playing {
+  width: 11px;
+  height: 5px;
+  background-color: red;
+}
+
+.videobar-play-btn {
+  position: fixed;
+  width: 1px;
+  cursor: pointer;
+}
+
+.videobar-circle {
+  margin: -5px;
+  position:relative;
+  background-color: red;
+  border-radius: 25%;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.videobar-circle-play {
+  transform: translate(770px, 0);
+  transition: all 3s;
+  margin: -5px;
+  position:relative;
+  background-color: red;
+  border-radius: 25%;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
