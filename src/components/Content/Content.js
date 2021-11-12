@@ -4,14 +4,13 @@ import { FiChevronsRight } from 'react-icons/fi';
 import Videobar from '../../components/Videobar/Videobar';
 
 const Content = ({heading, content}) => {
-  heading = heading || 'defaultHeader'; //default prop handler for no heading
 
   const Heading = ({ heading }) => <h1>{heading}</h1>
   const ContentText = ({ contentText }) => <p>{contentText}</p>
 
   return (
     <div className="content-header">
-      <Heading heading={`Welcome to the ${heading} component`} />
+      <Heading heading={`Welcome to the ${heading || 'defaultHead'} component`} />
       <ContentText contentText={content} />
       <div className="content-container">
         <div className="content-row">
