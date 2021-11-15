@@ -2,7 +2,6 @@
   padding-top: 20px;
   width: 200px;
   margin: 0 auto;
-  cursor: pointer;
 }
 
 .dropdown-header {
@@ -13,15 +12,19 @@
   color: white;
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
+  cursor: pointer;
 }
 
-.dropdown-list {
+.dropdown-list-countries,
+.dropdown-list-nodes,
+.dropdown-list-stores {
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid black;
   box-sizing: border-box;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .dropdown-list-item {
@@ -33,4 +36,9 @@
 .dropdown-header:hover,
 .dropdown-list-item:hover {
   background: black;
+}
+
+.dropdown-header[disabled] {
+  pointer-events: none;
+  opacity: 0.7;
 }
