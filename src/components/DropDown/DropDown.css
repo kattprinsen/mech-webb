@@ -1,0 +1,29 @@
+.dropdown-container {
+  width: 120px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.dropdown-header {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #3faffa;
+  background: #fff;
+  padding: 20px;
+}
+
+.dropdown-list {
+  background: #fff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  color: #3faffa;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.dropdown-list-item {
+  list-style: none;
+  margin-bottom: 0.4em;
+  overflow: visible;
+}
