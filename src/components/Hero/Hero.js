@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import video from '../../assets/code_video.mp4';
-import DropDown from '../../components/DropDown/DropDown';
 import './Hero.css';
 
 const Hero = () => {
@@ -27,7 +26,6 @@ const Hero = () => {
       <button className="video-btn" onClick={handleVideo}>
       { play ? 'Pause' : 'Play' }
       </button>
-      <DropDown />
     </div>
   );
 }

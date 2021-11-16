@@ -1,17 +1,13 @@
 import React from 'react';
 
 import Content from '../../components/Content/Content';
+import DropDown from '../../components/DropDown/DropDown';
 
 const Home = () => {
-
-  const home = {
-    heading: 'Home',
-    content: 'This is the home component'
-  };
-
+  
   return (
     <React.Fragment>
-      <Content {...home} />
+      <DropDown />
     </React.Fragment>
   );
 }

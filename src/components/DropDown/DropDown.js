@@ -20,6 +20,8 @@ const DropDown = () => {
   const [disableNodes, setDisableNodes] = useState(true);
   const [disableStores, setDisableStores] = useState(true);
 
+  const [done, setDone] = useState(false);
+
   const toggleCountries = () => setCountriesOpen(!countriesOpen);
   const toggleNodes = () => setNodesOpen(!nodesOpen);
   const toggleStores = () => setStoresOpen(!storesOpen);
@@ -29,7 +31,7 @@ const DropDown = () => {
     heading: "Dropdown data",
     content: "the data of your choices",
     country: selectedCountries,
-    nodes: selectedNodes,
+    node: selectedNodes,
     store: selectedStores
   };
 
@@ -53,13 +55,9 @@ const DropDown = () => {
       setSelectedStores(value);
       setStoresOpen(false);
       setDisableStores(true);
+      setDone(true);
     }
-
   };
-
-  if(selectedCountries, selectedNodes, selectedStores) {
-    <Content {...data} />
-  }
 
   return (
     <div className="dropdown-container">
@@ -99,6 +97,11 @@ const DropDown = () => {
         ))}
       </ul>
       )}
+      <div className="results">
+      {
+        done ? <Content {...data} /> : 'make some choices'
+      }
+      </div>
     </div>
   );
 }

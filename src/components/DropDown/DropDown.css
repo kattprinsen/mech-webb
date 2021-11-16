@@ -1,10 +1,12 @@
 .dropdown-container {
   padding-top: 20px;
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .dropdown-header {
+  width: 200px;
+  margin: 0 auto;
   border: 2px solid black;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   font-weight: 500;
@@ -18,6 +20,7 @@
 .dropdown-list-countries,
 .dropdown-list-nodes,
 .dropdown-list-stores {
+  width: 200px;
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid black;
   box-sizing: border-box;
@@ -25,6 +28,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .dropdown-list-item {
@@ -41,4 +45,9 @@
 .dropdown-header[disabled] {
   pointer-events: none;
   opacity: 0.7;
+}
+
+.results {
+  margin: 0 auto;
+  text-align: center;
 }
