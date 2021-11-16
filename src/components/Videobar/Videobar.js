@@ -12,7 +12,7 @@ const Videobar = () => {
     if(!playing){
       isPlaying(true);
     }
-    
+
     let width = 1;
     let id = setInterval(frame, 10);
 

@@ -18,19 +18,19 @@ const Content = ({heading, content, country, node, store}) => {
       <div className="content-container">
         <div className="content-row">
           <div className="content-column">
-            <CountryText countryText={country} />
+            <CountryText countryText={country || 'Country'} />
           </div>
             <div className="content-arrow">
               <FiChevronsRight />
             </div>
           <div className="content-column">
-            <NodeText nodeText={node} />
+            <NodeText nodeText={node || 'Node'} />
           </div>
             <div className="content-arrow">
               <FiChevronsRight />
             </div>
           <div className="content-column">
-            <StoreText storeText={store} />
+            <StoreText storeText={store || 'Store'} />
           </div>
         </div>
         <Videobar />
