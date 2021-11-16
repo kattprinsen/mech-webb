@@ -3,7 +3,7 @@ import './Content.css';
 import { FiChevronsRight } from 'react-icons/fi';
 import Videobar from '../../components/Videobar/Videobar';
 
-const Content = ({heading, content}) => {
+const Content = ({heading, content, country, node, store}) => {
 
   const Heading = ({ heading }) => <h1>{heading}</h1>
   const ContentText = ({ contentText }) => <p>{contentText}</p>

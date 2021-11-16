@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Content from '../Content/Content';
 import './DropDown.css';
 
 const countries = ["Sweden", "Norway", "Denmark", "Iceland"];
@@ -11,7 +12,9 @@ const DropDown = () => {
   const [nodesOpen, setNodesOpen] = useState(false);
   const [storesOpen, setStoresOpen] = useState(false);
 
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedCountries, setSelectedCountries] = useState(null);
+  const [selectedNodes, setSelectedNodes] = useState(null);
+  const [selectedStores, setSelectedStores] = useState(null);
 
   const [disableCountries, setDisableCountries] = useState(false);
   const [disableNodes, setDisableNodes] = useState(true);
@@ -21,16 +24,47 @@ const DropDown = () => {
   const toggleNodes = () => setNodesOpen(!nodesOpen);
   const toggleStores = () => setStoresOpen(!storesOpen);
 
-  const onOptionClicked = value => () => {
-    console.log(value);
-    setSelectedOption(value);
-    setCountriesOpen(false);
+
+  const data = {
+    heading: "Dropdown data",
+    content: "the data of your choices",
+    country: selectedCountries,
+    nodes: selectedNodes,
+    store: selectedStores
   };
+
+  const onOptionClicked = value => () => {
+
+    if(countriesOpen) {
+      setSelectedCountries(value);
+      setCountriesOpen(false);
+      setDisableNodes(false);
+      setDisableCountries(true);
+    }
+
+    if(nodesOpen) {
+      setSelectedNodes(value);
+      setNodesOpen(false);
+      setDisableStores(false);
+      setDisableNodes(true);
+    }
+
+    if(storesOpen) {
+      setSelectedStores(value);
+      setStoresOpen(false);
+      setDisableStores(true);
+    }
+
+  };
+
+  if(selectedCountries, selectedNodes, selectedStores) {
+    <Content {...data} />
+  }
 
   return (
     <div className="dropdown-container">
       <div className="dropdown-header" disabled={disableCountries} onClick={toggleCountries}>
-        {selectedOption || "Countries"}
+        {selectedCountries || "Countries"}
       </div>
       {countriesOpen && (
       <ul className="dropdown-list-countries">
@@ -42,7 +76,7 @@ const DropDown = () => {
       </ul>
       )}
       <div className="dropdown-header" disabled={disableNodes} onClick={toggleNodes}>
-        {selectedOption || "Nodes"}
+        {selectedNodes || "Nodes"}
       </div>
       {nodesOpen && (
       <ul disabled="true" className="dropdown-list-nodes">
@@ -54,7 +88,7 @@ const DropDown = () => {
       </ul>
       )}
       <div className="dropdown-header" disabled={disableStores} onClick={toggleStores}>
-        {selectedOption || "Store"}
+        {selectedStores || "Store"}
       </div>
       {storesOpen && (
       <ul disabled="true" className="dropdown-list-stores">
