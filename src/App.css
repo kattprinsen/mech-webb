@@ -3,4 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helveteica, sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 1px solid black;
 }
