@@ -16,6 +16,6 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: darkgrey;
   border: 1px solid black;
 }
