@@ -33,7 +33,6 @@ const Content = ({heading, content, country, node, store}) => {
             <StoreText storeText={store || 'Store'} />
           </div>
         </div>
-        <Videobar />
       </div>
     </div>
   );
